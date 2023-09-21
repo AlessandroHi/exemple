@@ -132,7 +132,23 @@ canvas {
    
     body{
         background: linear-gradient(70deg, rgb(7, 23, 255), rgb(47, 198, 232), rgb(48, 237, 178));
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
+
+    .Contenedor-Binicio {
+       
+        margin-left: 25%;
+
+
+    }
+
+    .Con-Emergente{
+        align-items: center;
+        text-align: center;
+        display: flex;
     }
 }
 
@@ -141,7 +157,21 @@ canvas {
    
     body{
         background: linear-gradient(70deg, rgb(7, 23, 255), rgb(47, 198, 232), rgb(48, 237, 178));
-        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+     
       
+    }
+
+    .Contenedor-Binicio {
+        margin-left: 25%;
+
+    }
+
+    .Con-Emergente{
+        align-items: center;
+        text-align: center;
+        display: flex;
     }
 }
