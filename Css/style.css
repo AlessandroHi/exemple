@@ -5,6 +5,10 @@ body {
 
 }
 
+#BVer2{
+  margin-left: 20px;
+}
+
 h1 {
     text-align: center;
     font-size: 100px;
@@ -84,6 +88,15 @@ canvas {
     background-size: 100% 100%;
     border-radius: 10px;
     border: 8px solid rgb(0, 0, 0);
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+   
+}
+
+.ani {
+    padding-top: 700px;
     display: flex;
     place-content: center;
     align-items: center;

@@ -98,7 +98,7 @@ function DibujarFlor(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, AltoTrazo)
         // Dibuja el centro de la flor
         ctx.beginPath();
         ctx.arc(x, y, 10, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'green';
         ctx.fill();
       }
       dibujarSiguientePetalo();
@@ -137,8 +137,8 @@ function DibujarFlorSinTallo(x, y, NumeroPetalos, RadioXPetalo, RadioYPetalo, Al
         }
         // Dibuja el centro de la flor
         ctx.beginPath();
-        ctx.arc(x, y, 10, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.arc(x, y, 15, 0, Math.PI * 2);
+        ctx.fillStyle = 'black';
         ctx.fill();
       }
       dibujarSiguientePetalo();
@@ -150,7 +150,7 @@ function CrearVarias() {
     // Espaciamiento y tamaño de cada flor
     const espacioX = canvas.width / 4;
     const espacioY = canvas.height / 3;
-    const TamañoFlor = 130;
+    const TamañoFlor = 120;
 
     for (let i = 0; i <= numFlores; i++) {
         const fila = Math.floor(i / 4);
@@ -158,6 +158,7 @@ function CrearVarias() {
         const x = espacioX * columna + espacioX / 2;
         const y = espacioY * fila + espacioY / 2;
 
-        DibujarFlorSinTallo(x, y, 8, 30, 80, TamañoFlor);
+        DibujarFlorSinTallo(x, y, 12, 25, 100, TamañoFlor);
+        
     }
 }
