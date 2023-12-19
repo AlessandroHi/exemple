@@ -5,6 +5,10 @@ body {
 
 }
 
+#BVer2{
+  margin-left: 20px;
+}
+
 h1 {
     text-align: center;
     font-size: 100px;
@@ -34,11 +38,17 @@ canvas {
 }
 
 .Texto {
+
     display: none;
+    height: 40px;
+    width: 600px;
 }
 
 .Texto h2 {
-    font-size: 50px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: 30px;
 }
 
 #B12 {
@@ -70,13 +80,26 @@ canvas {
     margin-top: 40px;
     height: 600px;
     width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+  transform: translate(-50%, -50%);
     background-image: url( '../media/fondo2.jpeg' );
     background-size: 100% 100%;
     border-radius: 10px;
     border: 8px solid rgb(0, 0, 0);
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+   
+}
+
+.ani {
+    padding-top: 700px;
+    display: flex;
+    place-content: center;
+    align-items: center;
 
    
 }
@@ -118,24 +141,50 @@ canvas {
       }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px){
+   
+    body{
+        background: linear-gradient(70deg, rgb(7, 23, 255), rgb(47, 198, 232), rgb(48, 237, 178));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+    }
 
-    .Contenedor-Binicio{
-        height: 500px;
-        width: 300px;
+    .Contenedor-Binicio {
+       
+        margin-left: 25%;
+
 
     }
 
     .Con-Emergente{
-        margin: 0;
         align-items: center;
         text-align: center;
         display: flex;
     }
+}
 
-    .cua{
-    left: 30%;
-    top: 20px;
-    
+
+@media only screen and (max-width: 767px){
+   
+    body{
+        background: linear-gradient(70deg, rgb(7, 23, 255), rgb(47, 198, 232), rgb(48, 237, 178));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+     
+      
+    }
+
+    .Contenedor-Binicio {
+        margin-left: 25%;
+
+    }
+
+    .Con-Emergente{
+        align-items: center;
+        text-align: center;
+        display: flex;
     }
 }
